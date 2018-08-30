@@ -1,3 +1,15 @@
-<p>
-  Successfully logged - home works!
-</p>
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title">Welcome {{user?.userName}}</div>
+      <ul>
+        <li>
+          <a [routerLink]="['/users']">Friends List</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" (click)="openSettingsModal()">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
